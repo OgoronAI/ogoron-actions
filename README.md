@@ -5,6 +5,8 @@ GitHub Actions for using Ogoron in customer repositories.
 This repository is organized as a multi-action repo. Each public action lives in
 its own subdirectory.
 
+This repository is licensed under the Apache License 2.0. See [LICENSE](./LICENSE).
+
 ## Before you start
 
 - Review the product terms: <https://ogoron.com/terms>
@@ -91,3 +93,8 @@ See also:
 - CLI overview: <https://docs.ogoron.ai/cli/overview>
 - Generate command: <https://docs.ogoron.ai/cli/generate>
 - Heal command: <https://docs.ogoron.ai/cli/heal>
+
+## Security
+
+If you believe you have found a security issue in `ogoron-actions`, do not open a
+public issue. Follow [SECURITY.md](./SECURITY.md).
