@@ -1,0 +1,22 @@
+name: Ogoron Setup
+
+on:
+  workflow_dispatch:
+
+jobs:
+  setup-ogoron:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ogoron
+        uses: OgoronAI/ogoron-actions/setup@v1
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OGORON_REPO_TOKEN: ${{ secrets.OGORON_REPO_TOKEN }}
+          OGORON_LLM_API_KEY: ${{ secrets.OGORON_LLM_API_KEY }}
